@@ -1,0 +1,45 @@
+<screen name="SecondInfoBar" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+  <panel name="infobartemp" />
+
+<!-- /* sep #####################################################-->
+    <ePixmap name="" position="10,120" size="860,600" pixmap="lkimages/2ndinfobar3.png" zPosition="-11" cornerRadius="5" alphatest="on" />
+    <ePixmap name="" position="1050,120" size="860,600" pixmap="lkimages/2ndinfobar3.png" zPosition="-11" cornerRadius="5" alphatest="on" />
+    <widget source="session.Event_Now" render="Label" position="260,130" size="600,40" font="Regular; 32" halign="left" valign="center" transparent="1" backgroundColor="background" noWrap="1" zPosition="2">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1300,130" size="600,40" font="Regular; 32" halign="left" valign="center" transparent="1" backgroundColor="background" noWrap="1" zPosition="2">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="LukaRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" position="260,240" size="600,460" halign="left" font="Regular; 30" transparent="1" backgroundColor="background" valign="top" zPosition="1" foregroundColor="white">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="session.Event_Next" render="LukaRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" position="1300,240" size="600,460" halign="left" font="Regular; 30" transparent="1" backgroundColor="background" valign="top" zPosition="1" foregroundColor="white">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="260,170" size="600,30" halign="left" font="Regular; 26" transparent="1" backgroundColor="background" valign="center" zPosition="1" noWrap="1" foregroundColor="yellow">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="260,200" size="600,30" halign="left" font="Regular; 26" transparent="1" backgroundColor="background" valign="center" zPosition="1" noWrap="1" foregroundColor="green">
+      <convert type="EventName">Rating</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1300,170" size="600,30" halign="left" font="Regular; 26" transparent="1" backgroundColor="background" valign="center" zPosition="1" noWrap="1" foregroundColor="yellow">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1300,200" size="600,30" halign="left" font="Regular; 26" transparent="1" backgroundColor="background" valign="center" zPosition="1" noWrap="1" foregroundColor="green">
+      <convert type="EventName">Rating</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="61,130" size="200,40" halign="center" font="Bold; 30" backgroundColor="background" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1100,130" size="200,40" halign="center" font="Bold; 30" backgroundColor="background" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel name="" position="20,130" size="38,38" font="icomoon; 36" text="" transparent="1" valign="center" halign="center" zPosition="99" foregroundColor="green" backgroundColor="black" />
+    <eLabel name="" position="1060,130" size="38,38" font="icomoon; 36" text="" transparent="1" valign="center" halign="center" zPosition="99" foregroundColor="red" backgroundColor="black" />
+    <widget font="Bold; 30" halign="right" position="1597,46" render="Label" size="296,50" source="global.CurrentTime" transparent="1" zPosition="1">
+      <convert type="ClockToText">Format:%a %d.%m. | %H:%M</convert>
+    </widget>
+    <!--############-->
+    

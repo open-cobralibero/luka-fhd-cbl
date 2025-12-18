@@ -1,0 +1,8 @@
+#!/bin/bash
+#rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Luka  > /dev/null 2>&1
+rm -rf /usr/share/enigma2/Luka-FHD-PLI  > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Luka* > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/Luka* > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/Luka* > /dev/null 2>&1
+echo 'Package removed.'
+exit 0

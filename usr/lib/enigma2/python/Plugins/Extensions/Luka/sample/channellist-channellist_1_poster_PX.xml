@@ -1,0 +1,74 @@
+<screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" backgroundColor="black" flags="wfNoBorder">
+  <panel name="ScreenTemplateAllColorButtons_menu" />
+  <panel name="timedate" />
+  <ePixmap name="" position="0,0" size="1920,1080" pixmap="lkimages/ch_bg.jpg" zPosition="-99" />
+  <widget source="session.VideoPicture" render="Pig" position="1140,199" zPosition="20" size="620,330" backgroundColor="transparent" transparent="0" cornerRadius="14" />
+  <widget source="ServiceEvent" render="Label" position="1135,755" size="760,267" font="Regular; 26" backgroundColor="mcolor2t" transparent="1" zPosition="50" noWrap="1">
+    <convert type="LukaEventName2">NextEventList3</convert>
+  </widget>
+  <widget source="Title" render="Label" position="422,135" size="1332,52" font="Regular; 32" noWrap="1" transparent="1" valign="center" zPosition="1" halign="left" />
+  <widget name="list" position="418,202" size="700,850" serviceItemHeight="50" serviceNumberFont="Regular;30" serviceNameFont="Regular;30" serviceInfoFont="Regular;28" foregroundColor="white" colorServiceDescription="mint" colorServiceDescriptionSelected="white" colorServiceStreamed="green" foregroundColorServiceNotAvail="#444444" colorEventProgressbarBorderSelected="white" colorEventProgressbarBorder="white" zPosition="4" transparent="1" halign="left" itemHeight="50" picServiceEventProgressbar="main/chprogressbar.png" progressbarHeight="6" progressBarWidth="100" progressbarBorderWidth="1" scrollbarMode="showAlways" scrollbarSliderForegroundColor="mcolor5tsel" scrollbarSliderBorderColor="mcolor2" scrollbarWidth="10" scrollbarSliderBorderWidth="1" backgroundColorMarked="#00131a1d" foregroundColorSelected="yellow" />
+  <widget source="ServiceEvent" render="Picon" position="206,100" size="198,120" scale="0" transparent="1" alphatest="blend" zPosition="22">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1140,100" size="618,36" font="Bold; 27" borderWidth="1" backgroundColor="black" transparent="1" halign="left" foregroundColor="white" zPosition="30" valign="center" noWrap="1">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Progress" position="1148,536" size="606,6" cornerRadius="3" backgroundColor="black1" zPosition="8" foregroundColor="mcolor5tsel">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1134,547" size="760,50" font="Bold; 27" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="8" valign="center" halign="left" noWrap="1">
+    <convert type="LukaEventName2">CompactTime</convert>
+  </widget>
+  <widget source="ServiceEvent" render="LukaRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" position="1133,596" size="760,154" halign="left" font="Bold; 26" transparent="1" valign="top" zPosition="99" foregroundColor="yellow">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="210,54" zPosition="1" size="440,32" font="Regular; 24" halign="left" backgroundColor="mcolor2t" transparent="1" valign="center">
+    <convert type="LukaServName2">Provider</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="6,204" zPosition="1" size="200,28" font="Regular; 22" halign="center" backgroundColor="background" transparent="1" valign="center">
+    <convert type="LukaServName2">%F %p %Y</convert>
+  </widget>
+  <eLabel name="" position="24,100" size="52,28" text="S" font="Bold; 22" transparent="1" zPosition="10" backgroundColor="red" />
+  <eLabel name="" position="24,170" size="52,28" text="Q" font="Bold; 22" transparent="1" zPosition="10" backgroundColor="red" />
+  <widget source="session.FrontendStatus" render="Label" position="102,72" size="92,28" font="Regular; 22" backgroundColor="black" transparent="1" zPosition="10" valign="center" halign="right">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <widget source="session.FrontendStatus" render="Label" position="100,142" size="92,28" font="Regular; 22" backgroundColor="black" transparent="1" zPosition="10" valign="center" halign="right">
+    <convert type="FrontendInfo">AGC</convert>
+  </widget>
+  <widget render="Progress" position="18,172" size="176,24" source="session.FrontendStatus" backgroundColor="black1" foregroundColor="red" cornerRadius="10" zPosition="8">
+    <convert type="FrontendInfo">AGC</convert>
+  </widget>
+  <widget render="Progress" position="18,102" size="176,24" source="session.FrontendStatus" backgroundColor="black1" foregroundColor="green" cornerRadius="10" zPosition="8">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="10,5" zPosition="1" size="400,44" font="Regular; 22" noWrap="1" halign="left" backgroundColor="mcolor2t" transparent="1" valign="center">
+    <convert type="LukaServName2">Reference</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1770,524" size="135,30" halign="left" font="Regular; 27" foregroundColor="white" backgroundColor="background" transparent="1" valign="center" zPosition="10">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <eLabel name="" position="20,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="OK" />
+  <eLabel name="" position="80,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="MENU" />
+  <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="EPG" />
+  <eLabel name="" position="200,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="INFO" />
+  <eLabel name="" position="260,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="EXIT" />
+  <widget source="ServiceEvent" render="Label" position="1161,1030" size="905,30" font="Bold; 28" backgroundColor="background" transparent="1" noWrap="1" zPosition="8" foregroundColor="gold" valign="top">
+    <convert type="LukaEventName2">PrimeTimeWithDuration</convert>
+  </widget>
+  <eLabel name="" position="1131,1030" size="30,30" font="icomoon; 24" text="" transparent="1" valign="center" halign="center" zPosition="99" foregroundColor="gold" />
+  <eLabel name="" position="19,59" size="40,40" font="icomoon; 30" text="" halign="center" zPosition="99" transparent="1" />
+  <eLabel name="" position="418,202" size="700,850" backgroundColor="mcolor2t" zPosition="-88" />
+  <widget source="ServiceEvent" render="LukaPosterX" position="205,250" cornerRadius="15" size="200,300" zPosition="5" />
+  <eLabel name="" position="1147,535" size="608,8" cornerRadius="4" backgroundColor="black1" zPosition="7" />
+  <eLabel name="" position="1146,534" size="610,10" cornerRadius="5" backgroundColor="mcolor5tsel" zPosition="6" />
+  <eLabel name="" position="16,100" size="180,28" cornerRadius="10" backgroundColor="mcolor5tsel" zPosition="6" />
+  <eLabel name="" position="17,101" size="178,26" cornerRadius="10" backgroundColor="black1" zPosition="7" />
+  <eLabel name="" position="16,170" size="180,28" cornerRadius="10" backgroundColor="mcolor5tsel" zPosition="6" />
+  <eLabel name="" position="17,171" size="178,26" cornerRadius="10" backgroundColor="black1" zPosition="7" />
+  <widget source="ServiceEvent" render="Label" position="1770,486" size="120,40" font="Regular; 27" backgroundColor="mcolor2t" transparent="1" zPosition="50" valign="center">
+    <convert type="LukaEventName2">AgeRating</convert>
+  </widget>
+</screen>

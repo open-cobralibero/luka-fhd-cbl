@@ -1,0 +1,46 @@
+<screen name="EventView" position="0,0" size="1920,1080" title="Eventview" backgroundColor="background" flags="wfNoBorder">
+  <panel name="titletemp" />
+  <panel name="menutemp" />
+  <panel name="ScreenTemplateAllColorButtons_menu" />
+  <ePixmap name="" position="206,88" size="198,146" scale="1" pixmap="main/ico/epgicon.png" alphatest="on" zPosition="1" />
+  <widget name="channel" position="0,0" size="0,0" font="Regular; 20" halign="center" valign="bottom" backgroundColor="background" foregroundColor="white" transparent="1" />
+  <widget name="datetime" position="0,0" size="0,0" font="Regular; 20" halign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+  <widget name="duration" position="0,0" size="0,0" font="Regular; 20" halign="center" backgroundColor="background" foregroundColor="white" transparent="1" />
+  <panel name="timedate" />
+  <eLabel name="" position="20,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="OK" />
+  <eLabel name="" position="80,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="MENU" />
+  <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="EPG" />
+  <eLabel name="" position="200,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="INFO" />
+  <eLabel name="" position="260,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="EXIT" />
+  <widget source="Event" render="Label" position="16,134" size="180,30" font="Regular; 26" transparent="1" halign="center" valign="center" zPosition="99" backgroundColor="background">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="Event" render="Label" position="16,204" zPosition="2" size="180,30" font="Regular;26" halign="center" backgroundColor="background" transparent="1" valign="center">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="Event" render="Progress" position="18,172" size="176,24" cornerRadius="10" backgroundColor="black1" foregroundColor="green" zPosition="33">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="session.Event_Next" render="LukaRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" position="428,790" zPosition="2" size="1320,220" font="Regular; 30" halign="left" backgroundColor="background" transparent="1" valign="top">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <!-- /* separate -->
+  <eLabel name="" position="418,202" size="1340,500" backgroundColor="mcolor2t" zPosition="-88" />
+  <widget name="epg_description" position="420,202" size="1338,500" zPosition="1" font="Regular; 30" backgroundColor="background" transparent="1" valign="top" halign="center" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="mcolor5tsel" scrollbarSliderBorderColor="mcolor2" scrollbarWidth="10" scrollbarSliderBorderWidth="1" />
+  <eLabel name="" position="418,720" size="1340,300" backgroundColor="mcolor2t" zPosition="-88" />
+  <widget source="session.Event_Next" render="Label" position="428,730" size="1320,54" halign="left" font="Bold; 42" backgroundColor="background" transparent="1" valign="center" noWrap="1" foregroundColor="white2">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="6,251" size="400,40" font="Bold; 30" borderWidth="1" backgroundColor="background" transparent="1" halign="center" zPosition="5" valign="center" noWrap="1" foregroundColor="white">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="Service" render="Label" position="6,315" size="400,459" font="Regular; 26" backgroundColor="mcolor2t" transparent="1" zPosition="50" noWrap="1">
+    <convert type="LukaEventName2">CompactTimeline</convert>
+  </widget>
+  <!--##################-->
+  <eLabel name="" position="16,170" size="180,28" cornerRadius="10" backgroundColor="mcolor5tsel" zPosition="6" />
+  <eLabel name="" position="17,171" size="178,26" cornerRadius="10" backgroundColor="black1" zPosition="7" />
+  <!--##################-->
+</screen>

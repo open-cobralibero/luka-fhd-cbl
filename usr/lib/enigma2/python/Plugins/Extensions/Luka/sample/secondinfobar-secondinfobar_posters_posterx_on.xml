@@ -1,0 +1,4 @@
+
+  <widget source="session.Event_Now" render="LukaPosterX" position="56,176" cornerRadius="15" size="200,300" zPosition="88" />
+  <widget source="session.Event_Now" render="LukaPosterX" nexts="1" position="1096,176" cornerRadius="15" size="200,300" zPosition="88" />
+ 

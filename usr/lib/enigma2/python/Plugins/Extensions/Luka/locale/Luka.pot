@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 18:10+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: File_Commander.py:18 type_utils.py:22
+msgid "File Commander - Addon"
+msgstr ""
+
+#: File_Commander.py:19 type_utils.py:23
+msgid "play/show Files"
+msgstr ""
+
+#: File_Commander.py:74 File_Commander.py:75 File_Commander.py:77
+#: type_utils.py:108 type_utils.py:109 type_utils.py:111
+msgid "Exit"
+msgstr ""
+
+#: File_Commander.py:76 type_utils.py:110
+msgid "Save"
+msgstr ""
+
+#: File_Commander.py:132
+msgid "Do you want to save the changes?"
+msgstr ""
+
+#: plugin.py:92
+msgid "Crimson"
+msgstr ""
+
+#: plugin.py:93
+msgid "Gold"
+msgstr ""
+
+#: plugin.py:94
+msgid "Teal"
+msgstr ""
+
+#: plugin.py:95
+msgid "Purple"
+msgstr ""
+
+#: plugin.py:99
+msgid "Arrow"
+msgstr ""
+
+#: plugin.py:100
+msgid "Circle"
+msgstr ""
+
+#: plugin.py:101
+msgid "Square"
+msgstr ""
+
+#: plugin.py:105 plugin.py:109 plugin.py:111 plugin.py:131 plugin.py:151
+msgid "Default"
+msgstr ""
+
+#: plugin.py:106
+msgid "LucidaUnicode"
+msgstr ""
+
+#: plugin.py:117 plugin.py:121 plugin.py:134 plugin.py:138
+msgid "OFF"
+msgstr ""
+
+#: plugin.py:118 plugin.py:122 plugin.py:135 plugin.py:139
+msgid "ON"
+msgstr ""
+
+#: plugin.py:142
+msgid "ChannelSelection_1_Poster_PX"
+msgstr ""
+
+#: plugin.py:143
+msgid "ChannelSelection_1_Poster_XE"
+msgstr ""
+
+#: plugin.py:144
+msgid "ChannelSelection_NO_Poster"
+msgstr ""
+
+#: plugin.py:147
+msgid "EventView_NO_Posters"
+msgstr ""
+
+#: plugin.py:148
+msgid "EventView_1_Poster"
+msgstr ""
+
+#: plugin.py:160
+msgid "Customization tool for Luka-FHD Skin"
+msgstr ""
+
+#: plugin.py:252
+msgid "Import Api Key TMDB from /tmp/tmdbkey.txt?"
+msgstr ""
+
+#: plugin.py:254 plugin.py:269 plugin.py:278 plugin.py:293
+#, python-format
+msgid "Missing %s !"
+msgstr ""
+
+#: plugin.py:265
+msgid "TMDB ApiKey Imported & Stored!"
+msgstr ""
+
+#: plugin.py:267
+msgid "TMDB ApiKey is empty!"
+msgstr ""
+
+#: plugin.py:276
+msgid "Import Api Key OMDB from /tmp/omdbkey.txt?"
+msgstr ""
+
+#: plugin.py:289
+msgid "OMDB ApiKey Imported & Stored!"
+msgstr ""
+
+#: plugin.py:291
+msgid "OMDB ApiKey is empty!"
+msgstr ""
+
+#: plugin.py:313
+msgid "Color Style:"
+msgstr ""
+
+#: plugin.py:314
+msgid "Button Style:"
+msgstr ""
+
+#: plugin.py:315
+msgid "Select Your Font:"
+msgstr ""
+
+#: plugin.py:316
+msgid "Skin Style:"
+msgstr ""
+
+#: plugin.py:317
+msgid "InfoBar Style:"
+msgstr ""
+
+#: plugin.py:319
+msgid "InfoBar PosterX:"
+msgstr ""
+
+#: plugin.py:320
+msgid "InfoBar Xtraevent:"
+msgstr ""
+
+#: plugin.py:323
+msgid "SecondInfobar Style:"
+msgstr ""
+
+#: plugin.py:324
+msgid "SecondInfobar Posterx:"
+msgstr ""
+
+#: plugin.py:325
+msgid "SecondInfobar Xtraevent:"
+msgstr ""
+
+#: plugin.py:326
+msgid "ChannelSelection Style:"
+msgstr ""
+
+#: plugin.py:327
+msgid "EventView Style:"
+msgstr ""
+
+#: plugin.py:328
+msgid "VolumeBar Style:"
+msgstr ""
+
+#: plugin.py:332
+msgid "Settings Apikey Server"
+msgstr ""
+
+#: plugin.py:334
+msgid "Settings TMDB ApiKey"
+msgstr ""
+
+#: plugin.py:336
+msgid "Load TMDB Apikey from /tmp/tmdbkey.txt"
+msgstr ""
+
+#: plugin.py:337
+msgid "Signup on TMDB and input free personal ApiKey"
+msgstr ""
+
+#: plugin.py:338
+msgid "Settings OMDB APIKEY"
+msgstr ""
+
+#: plugin.py:340
+msgid "Load OMDB Apikey from /tmp/omdbkey.txt"
+msgstr ""
+
+#: plugin.py:341
+msgid "Signup on OMDB and input free personal ApiKey"
+msgstr ""
+
+#: plugin.py:349
+msgid ""
+"[Checkskin] This operation checks if the skin has its components (is not "
+"sure)..\n"
+"Do you really want to continue?"
+msgstr ""
+
+#: plugin.py:410
+#, python-format
+msgid "Setup Luka for Luka-FHD v.%s"
+msgstr ""
+
+#: plugin.py:411
+msgid "Info..."
+msgstr ""
+
+#: plugin.py:579
+msgid ""
+"GUI needs a restart to apply a new skin.\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+
+#: plugin.py:582 plugin.py:674
+msgid "Restart GUI now?"
+msgstr ""
+
+#: plugin.py:611 plugin.py:616
+msgid "Server version:"
+msgstr ""
+
+#: plugin.py:612 plugin.py:617
+msgid "Version installed:"
+msgstr ""
+
+#: plugin.py:613
+msgid "You have the current version Luka!"
+msgstr ""
+
+#: plugin.py:618
+msgid ""
+"The update is available!\n"
+"\n"
+"Do you want to run the update now?"
+msgstr ""
+
+#: plugin.py:621
+#, python-format
+msgid "You have version %s!!!"
+msgstr ""
+
+#: plugin.py:660
+msgid "Downloading Luka..."
+msgstr ""
+
+#: plugin.py:668
+msgid "Installing updates!"
+msgstr ""
+
+#: plugin.py:673
+msgid ""
+"Luka update was done!!!\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+
+#: plugin.py:677
+msgid "Error downloading files!"
+msgstr ""
+
+#: plugin.py:685
+msgid "Download in progress..."
+msgstr ""
+
+#: WeatherSearch.py:29
+msgid "metric system"
+msgstr ""
+
+#: WeatherSearch.py:29
+msgid "imperial system"
+msgstr ""
+
+#: WeatherSearch.py:49
+msgid "WeatherPlugin: List of Entries"
+msgstr ""
+
+#: WeatherSearch.py:50 WeatherSearch.py:193
+msgid "City"
+msgstr ""
+
+#: WeatherSearch.py:51 WeatherSearch.py:193
+msgid "System"
+msgstr ""
+
+#: WeatherSearch.py:52 WeatherSearch.py:292
+msgid "Back"
+msgstr ""
+
+#: WeatherSearch.py:53
+msgid "Add"
+msgstr ""
+
+#: WeatherSearch.py:54
+msgid "Edit"
+msgstr ""
+
+#: WeatherSearch.py:55 WeatherSearch.py:185
+msgid "Delete"
+msgstr ""
+
+#: WeatherSearch.py:106 WeatherSearch.py:248
+msgid "Really delete this WeatherPlugin Entry?"
+msgstr ""
+
+#: WeatherSearch.py:176
+msgid "WeatherPlugin: Edit Entry"
+msgstr ""
+
+#: WeatherSearch.py:183
+msgid "Cancel"
+msgstr ""
+
+#: WeatherSearch.py:184 WeatherSearch.py:293
+msgid "OK"
+msgstr ""
+
+#: WeatherSearch.py:186
+msgid "Search Code"
+msgstr ""
+
+#: WeatherSearch.py:193
+msgid "Location code"
+msgstr ""
+
+#: WeatherSearch.py:207
+msgid ""
+"You need to enter a valid city name before you can search for the location "
+"code."
+msgstr ""
+
+#: WeatherSearch.py:219 WeatherSearch.py:231
+msgid "Please enter a valid city name."
+msgstr ""
+
+#: WeatherSearch.py:221 WeatherSearch.py:234
+msgid "Please enter a valid location code for the city."
+msgstr ""
+
+#: WeatherSearch.py:291
+msgid "MSN location search result"
+msgstr ""
+
