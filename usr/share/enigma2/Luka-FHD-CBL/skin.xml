@@ -516,7 +516,7 @@
   </widget>
   <!-- /* separate -->
   <eLabel name="" position="418,202" size="1340,500" backgroundColor="mcolor2t" zPosition="-88" />
-  <widget name="epg_description" position="420,202" size="1338,500" zPosition="1" font="Regular; 30" backgroundColor="background" transparent="1" valign="top" halign="center" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="mcolor5tsel" scrollbarSliderBorderColor="mcolor2" scrollbarWidth="10" scrollbarSliderBorderWidth="1" />
+  <widget name="epg_description" position="720,202" size="1038,500" zPosition="1" font="Regular; 30" backgroundColor="background" transparent="1" valign="top" halign="center" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="mcolor5tsel" scrollbarSliderBorderColor="mcolor2" scrollbarWidth="10" scrollbarSliderBorderWidth="1" />
   <eLabel name="" position="418,720" size="1340,300" backgroundColor="mcolor2t" zPosition="-88" />
   <widget source="session.Event_Next" render="Label" position="428,730" size="1320,54" halign="left" font="Bold; 42" backgroundColor="background" transparent="1" valign="center" noWrap="1" foregroundColor="white2">
     <convert type="EventName">Name</convert>
@@ -531,13 +531,15 @@
   <eLabel name="" position="16,170" size="180,28" cornerRadius="10" backgroundColor="mcolor5tsel" zPosition="6" />
   <eLabel name="" position="17,171" size="178,26" cornerRadius="10" backgroundColor="black1" zPosition="7" />
   <!--##################-->
+  <widget source="Event" render="LukaPosterX" position="420,204" cornerRadius="15" size="300,438" zPosition="88" />
 </screen><screen name="Volume" position="center,110" size="704,70" backgroundColor="mcolor2t" flags="wfNoBorder" zPosition="100" transparent="0">
   <widget name="VolumeText" position="634,0" size="66,65" font="Regular; 34" backgroundColor="background" foregroundColor="white" halign="center" valign="center" zPosition="99" transparent="1" />
   <eLabel name="" position="68,24" size="564,20" backgroundColor="mcolor5tsel" zPosition="6" />
   <eLabel name="" position="69,25" size="562,18" backgroundColor="black1" zPosition="8" />
-  <widget name="Volume" position="70,26" size="560,16" backgroundColor="mcolor3t" foregroundColor="mcolor5tsel" zPosition="10" />
+  <widget name="Volume" position="70,26" size="560,16" backgroundColor="mcolor3t" zPosition="88" render="Progress" pixmap="main/progfg56420.png" cornerRadius="10" />
   <eLabel name="" position="0,2" size="66,65" font="icomoon; 44" text="" transparent="1" valign="center" halign="center" />
 </screen>
+
   <include filename="skin_templates.xml" />
   <screen name="SlimChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ScreenTemplateAllColorButtons_menu" />
