@@ -2,6 +2,6 @@
   <widget name="VolumeText" position="634,0" size="66,65" font="Regular; 34" backgroundColor="background" foregroundColor="white" halign="center" valign="center" zPosition="99" transparent="1" />
   <eLabel name="" position="68,24" size="564,20" backgroundColor="mcolor5tsel" zPosition="6" />
   <eLabel name="" position="69,25" size="562,18" backgroundColor="black1" zPosition="8" />
-  <widget name="Volume" position="68,24" size="564,20" backgroundColor="progbg" zPosition="88" render="Progress" pixmap="main/progfg56420.png" cornerRadius="10" />
+  <widget name="Volume" position="70,26" size="560,16" backgroundColor="mcolor3t" zPosition="88" render="Progress" pixmap="main/progfg56420.png" cornerRadius="0" />
   <eLabel name="" position="0,2" size="66,65" font="icomoon; 44" text="" transparent="1" valign="center" halign="center" />
 </screen>
