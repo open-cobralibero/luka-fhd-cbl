@@ -531,15 +531,13 @@
   <eLabel name="" position="16,170" size="180,28" cornerRadius="10" backgroundColor="mcolor5tsel" zPosition="6" />
   <eLabel name="" position="17,171" size="178,26" cornerRadius="10" backgroundColor="black1" zPosition="7" />
   <!--##################-->
-  <widget source="Event" render="LukaPosterX" position="420,204" cornerRadius="15" size="300,438" zPosition="88" />
 </screen><screen name="Volume" position="center,110" size="704,70" backgroundColor="mcolor2t" flags="wfNoBorder" zPosition="100" transparent="0">
   <widget name="VolumeText" position="634,0" size="66,65" font="Regular; 34" backgroundColor="background" foregroundColor="white" halign="center" valign="center" zPosition="99" transparent="1" />
   <eLabel name="" position="68,24" size="564,20" backgroundColor="mcolor5tsel" zPosition="6" />
   <eLabel name="" position="69,25" size="562,18" backgroundColor="black1" zPosition="8" />
-  <widget name="Volume" position="70,26" size="560,16" backgroundColor="mcolor3t" foregroundColor="mcolor5tsel" zPosition="10" />
+ <widget name="Volume" position="70,26" size="560,16" backgroundColor="mcolor3t" zPosition="88" render="Progress" pixmap="main/progfg56420.png" cornerRadius="0" />
   <eLabel name="" position="0,2" size="66,65" font="icomoon; 44" text="" transparent="1" valign="center" halign="center" />
 </screen>
-
   <include filename="skin_templates.xml" />
   <screen name="SlimChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="ScreenTemplateAllColorButtons_menu" />
@@ -6749,16 +6747,5 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 99), size = (1340, 2), png = 5), # in
             </convert>
   </widget>
   <eLabel name="" position="206,110" size="198,146" font="icomoon; 100" text="" halign="center" zPosition="99" transparent="1" />
-  </screen>
-  <!-- *************************************** -->  
-  <!-- Quit Screen -->
-  <screen name="QuitMainloopScreen" position="0,0" size="1920,1080" transparent="1" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="0" size="1920,1080" pixmap="Luka-FHD-CBL/infobar/Starlogo_Uclan.png" />
-    <ePixmap pixmap="Luka-FHD-CBL/shutdown-red.png" position="452,802" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
-    <eLabel name="" position="-2,840" size="1920,60" text="Restarting  Receiver  Please  Wait .... " font="Regular;40" halign="center" zPosition="3" foregroundColor="red" backgroundColor="transparent" transparent="1" />
-    <eLabel name="" position="1450,980" size="450,40" text="Skin: mod. By AREADELTA " font="Regular;25" halign="left" zPosition="3" foregroundColor="white" backgroundColor="transparent" transparent="1" />
-    <eLabel position="10,1020" size="1900,2" backgroundColor="red" />
-    <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.png" position="150,120" zPosition="2" size="136,64" transparent="1" alphatest="blend" />
-  </screen>
-  <!-- *************************************** -->    
+</screen>
 </skin>
