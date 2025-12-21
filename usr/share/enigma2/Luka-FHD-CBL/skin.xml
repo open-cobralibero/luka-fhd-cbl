@@ -288,7 +288,7 @@
     <color name="mcolor510" value="#10283752" />
     <color name="mcolor530" value="#30283752" />
     <color name="mcolor5t" value="#22283752" />
-    <color name="mcolor5tsel" value="#22c52549" />
+    <color name="mcolor5tsel" value="#224f0651" />
     <color name="mcolor6" value="#004d5e7c" />
     <color name="mcolortg1" value="#44c52549" />
     <color name="mcolortg2" value="#441e52ba" />
@@ -323,7 +323,7 @@
     <color name="wpuc" value="#00080b11" />
     <color name="yellow" value="#00ffff00" />
   </colors>
- 
+  
 <fonts>
   <font filename="lcd.ttf" name="LCD" scale="100" />
   <font filename="tuxtxt.ttf" name="Console" scale="100" />
@@ -536,7 +536,7 @@
   <widget name="VolumeText" position="634,0" size="66,65" font="Regular; 34" backgroundColor="background" foregroundColor="white" halign="center" valign="center" zPosition="99" transparent="1" />
   <eLabel name="" position="68,24" size="564,20" backgroundColor="mcolor5tsel" zPosition="6" />
   <eLabel name="" position="69,25" size="562,18" backgroundColor="black1" zPosition="8" />
-  <widget name="Volume" position="70,26" size="560,16" backgroundColor="mcolor3t" zPosition="88" render="Progress" pixmap="main/progfg56420.png" cornerRadius="10" />
+  <widget name="Volume" position="70,26" size="560,16" backgroundColor="mcolor3t" foregroundColor="mcolor5tsel" zPosition="10" />
   <eLabel name="" position="0,2" size="66,65" font="icomoon; 44" text="" transparent="1" valign="center" halign="center" />
 </screen>
 
@@ -653,6 +653,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <widget name="videofps" position="10,513" size="880,40" backgroundColor="background" transparent="1" zPosition="1" font="Regular; 26" valign="center" halign="left" foregroundColor="yellow" />
   </screen>
   <screen name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="menutemp" />
     <panel name="menulistpli" />
     <panel name="ScreenTemplateAllColorButtons_menu" />
@@ -664,6 +665,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <ePixmap name="" position="206,88" size="198,146" scale="1" pixmap="imagelogo.png" alphatest="blend" zPosition="1" transparent="1" />
   </screen>
   <screen name="menu_system" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="menutemp" />
     <panel name="menulist" />
     <panel name="ScreenTemplateAllColorButtons_menu" />
@@ -675,6 +677,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="206,110" size="198,146" font="icomoon; 100" text="" halign="center" zPosition="99" transparent="1" />
   </screen>
   <screen name="menu_setup" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -686,6 +689,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="206,110" size="198,146" font="icomoon; 100" text="" halign="center" zPosition="99" transparent="1" />
   </screen>
   <screen name="menu_information" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -698,6 +702,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="206,110" size="198,146" font="icomoon; 100" text="" halign="center" zPosition="99" transparent="1" />
   </screen>
   <screen name="menu_scan" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -709,6 +714,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_shutdown" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -720,6 +726,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_tv_selection" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -731,6 +738,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_osd_menu" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -742,6 +750,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_rec" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -753,6 +762,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_video_menu" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -764,6 +774,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_av_setup" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -775,6 +786,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_audio_menu" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -786,6 +798,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_epg" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -797,6 +810,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_network" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -808,6 +822,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_harddisk" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -819,6 +834,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_software_manager" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -830,6 +846,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_advanced_software" position="0,0" size="1920,1080" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -841,6 +858,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="140,1018" size="55,50" backgroundColor="mcolor4" halign="center" valign="center" transparent="0" cornerRadius="10" font="Regular; 17" zPosition="1" text="HELP" />
   </screen>
   <screen name="menu_extended" position="0,0" size="1920,1080" title="Main menu" backgroundColor="black" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -852,6 +870,7 @@ MultiContentEntryText(pos=  (0, 49), size =(890,2), text = "", font = 0, flags =
     <eLabel name="" position="206,110" size="198,146" font="icomoon; 100" text="" halign="center" zPosition="99" transparent="1" />
   </screen>
   <screen name="menu_timermenu" position="0,0" size="1920,1080" title="Main menu" backgroundColor="background" flags="wfNoBorder">
+  <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.svg" position="400,50" zPosition="5" size="136,64" transparent="1" alphatest="blend" />
     <panel name="titletemp" />
     <panel name="menutemp" />
     <panel name="menulist" />
@@ -6730,5 +6749,16 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 99), size = (1340, 2), png = 5), # in
             </convert>
   </widget>
   <eLabel name="" position="206,110" size="198,146" font="icomoon; 100" text="" halign="center" zPosition="99" transparent="1" />
-</screen>
+  </screen>
+  <!-- *************************************** -->  
+  <!-- Quit Screen -->
+  <screen name="QuitMainloopScreen" position="0,0" size="1920,1080" transparent="1" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="0" size="1920,1080" pixmap="Luka-FHD-CBL/infobar/Starlogo_Uclan.png" />
+    <ePixmap pixmap="Luka-FHD-CBL/shutdown-red.png" position="452,802" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+    <eLabel name="" position="-2,840" size="1920,60" text="Restarting  Receiver  Please  Wait .... " font="Regular;40" halign="center" zPosition="3" foregroundColor="red" backgroundColor="transparent" transparent="1" />
+    <eLabel name="" position="1450,980" size="450,40" text="Skin: mod. By AREADELTA " font="Regular;25" halign="left" zPosition="3" foregroundColor="white" backgroundColor="transparent" transparent="1" />
+    <eLabel position="10,1020" size="1900,2" backgroundColor="red" />
+    <ePixmap pixmap="/usr/share/enigma2/logos/boxlogo.png" position="150,120" zPosition="2" size="136,64" transparent="1" alphatest="blend" />
+  </screen>
+  <!-- *************************************** -->    
 </skin>
